@@ -6,7 +6,7 @@ import google.generativeai as genai
 
 # 從 Streamlit 雲端安全保險箱讀取金鑰
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
-model = genai.GenerativeModel('gemini-2.5')
+model = genai.GenerativeModel('gemini-flash')
 
 # 定義萃取檔案文字的函式
 def extract_text(file, file_type):
